@@ -13,7 +13,7 @@ export const useFetchGifs = (category) => {
                 data: imgs,
                 loading: false
             });
-        }, 2000);
+        }, 500);
     };
 
     useEffect(() => {
