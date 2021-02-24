@@ -25,6 +25,11 @@ describe('Pruebas sobre <GifGrid />', () => {
                 id: 'image_id',
                 title: 'img_title',
                 url: 'http://localhost/some/img.jpg'
+            },
+            {
+                id: 'other_id',
+                title: 'img_title',
+                url: 'http://localhost/some/img.jpg'
             }
         ];
 
@@ -34,6 +39,9 @@ describe('Pruebas sobre <GifGrid />', () => {
         });
 
         const wrapper = shallow(<GifGrid category={category} />);
-        expect(wrapper).toMatchSnapshot();
+
+        // expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find('p').exists()).toBe(false);
+        expect(wrapper.find('GifGridItem').length).toBe(imgData.length);
     });
 });

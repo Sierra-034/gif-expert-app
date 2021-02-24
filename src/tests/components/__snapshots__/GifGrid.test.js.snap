@@ -17,23 +17,3 @@ exports[`Pruebas sobre <GifGrid /> Coincide con el snapshot 1`] = `
   />
 </Fragment>
 `;
-
-exports[`Pruebas sobre <GifGrid /> Muestra los items cuando se cargan imágenes con useFetchGifs 1`] = `
-<Fragment>
-  <h3
-    className="animate__animated animate__fadeIn"
-  >
-    Halo
-  </h3>
-  <div
-    className="card-grid"
-  >
-    <GifGridItem
-      id="image_id"
-      key="image_id"
-      title="img_title"
-      url="http://localhost/some/img.jpg"
-    />
-  </div>
-</Fragment>
-`;
